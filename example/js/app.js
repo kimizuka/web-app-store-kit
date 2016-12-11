@@ -258,7 +258,7 @@
     score.add();
   });
 
-  doc.body.addEventListener("click", function(evt) {
+  doc.body.addEventListener("touchend", function(evt) {
     if (!isMenu(evt.target)) {
       kicker.kick(ball.getPosition());
     }
