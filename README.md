@@ -10,6 +10,11 @@ Safariでアクセスした際は、ホーム画面に追加を促すストア�
 ※1 iOS以外からのアクセスではストアを表示せずにアプリを表示します。
 
 
+## サンプル
+https://kimizuka.github.io/web-app-store/example/
+https://kimizuka.github.io/web-app-store/
+
+
 ## 開発に必要なもの
 - Sass ※ CSSを自前で書く気概があれば必要ありません。
 - Compass ※ CSSを自前で書く気概があれば必要ありません。
