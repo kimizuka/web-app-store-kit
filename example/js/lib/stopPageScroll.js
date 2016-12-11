@@ -4,7 +4,7 @@
 
   // ページのスクロールを止めるためにtouchmoveを止める
 
-  if (navigator.standalone) {
+  if (doc.body.dataset.app !== "true") {
     doc.body.addEventListener("touchmove", (evt) => {
       evt.preventDefault();
     }, true);
