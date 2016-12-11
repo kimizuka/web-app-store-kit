@@ -1,0 +1,31 @@
+#store-header {
+  position: relative;
+  padding: 15px;
+  border-bottom: solid 1px #cdcdcd;
+  overflow: hidden;
+
+  .icon {
+    border: solid 1px #cdcdcd;
+    border-radius: 21px;
+    width: 100px; height: 100px;
+    overflow: hidden;
+  }
+
+  .info {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 20px; bottom: 15px;
+    left: 125px; right: 15px;
+
+    .ttl {
+      font-size: 1.5rem;
+      word-wrap: break-word;
+    }
+
+    .author {
+      margin-top: 14px;
+      font-size: 1.1rem;
+    }
+  }
+}

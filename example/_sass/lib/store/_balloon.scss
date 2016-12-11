@@ -1,0 +1,88 @@
+#store-balloon {
+  position: fixed;
+  bottom: 20px; left: 50%;
+  margin-left: -70px;
+  border-radius: 60px;
+  width: 140px; height: 140px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .2em;
+  background: $balloonColor;
+  animation: store-balloon-flow 2s ease 0s infinite normal;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+
+  &:before {
+    position: absolute;
+    top: 50%; left: 50%;
+    margin: -44px -30px;
+    border-radius: 13px;
+    width: 60px; height: 60px;
+    content: "";
+    background: #fff;
+  }
+
+  &:after {
+    display: block;
+    position: absolute;
+    margin-left: -10px;
+    bottom: -20px; left: 50%;
+    width: 0; height: 0;
+    border: solid transparent 10px;
+    border-top: solid #{$balloonColor} 10px;
+    content: "";
+  }
+
+  #store-balloon-icon {
+    position: absolute;
+    top: 50%; left: 50%;
+    margin: -31.5px -17.5px;
+    border-radius: 7.5px;
+    width: 35px; height: 35px;
+    background: #686871;
+
+    &:before {
+      display: block;
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0; right: 0;
+      margin: auto;
+      border-radius: 1px;
+      width: 15px; height: 2px;
+      content: "";
+      background: #fff;
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0; right: 0;
+      margin: auto;
+      border-radius: 1px;
+      width: 2px; height: 15px;
+      content: "";
+      background: #fff;
+    }
+  }
+
+  #store-balloon-text {
+    position: absolute;
+    top: 50%;
+    left: 0; right: 0;
+    margin-top: 21px;
+    color: #000;
+    line-height: 1.4em;
+  }
+}
+
+@keyframes store-balloon-flow {
+    0%   {
+        bottom: 20px;
+    }
+    50%  {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 20px;
+    }
+}

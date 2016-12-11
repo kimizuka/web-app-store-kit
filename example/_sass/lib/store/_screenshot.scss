@@ -1,0 +1,38 @@
+#store-screenshot {
+  position: relative;
+  padding: 15px 0;
+  border-bottom: solid 1px #cdcdcd;
+  overflow: hidden;
+
+  .ttl {
+    margin-left: 15px;
+    font-size: 1.5rem;
+  }
+
+  .scrollmask {
+    margin-top: 14px;
+    height: 290px;
+    overflow: hidden;
+  }
+
+  .scrollarea {
+    padding-bottom: 100px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .screenshots {
+    white-space: nowrap;
+  }
+
+  .screenshot {
+    display: inline-block;
+    border: solid 1px #cdcdcd;
+    margin-left: 15px;
+
+    &:last-child {
+      margin-right: 15px;
+    }
+  }
+}

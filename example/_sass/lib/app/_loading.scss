@@ -1,0 +1,35 @@
+#app-loading {
+  visibility: hidden;
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background: rgba(255, 255, 255, .8);
+  opacity: 0;
+  pointer-events: none;
+
+  &:after {
+    position: absolute;
+    top: 50%; left: 50%;
+    margin: -5px;
+    border-radius: 50%;
+    width: 10px; height: 10px;
+    content: "";
+    list-style: none;
+    animation: app-loading-rotete 1.2s ease-in-out infinite normal; 
+    box-shadow: 0 -30px 0 #ccc, 28.53px -9.27px 0 #ccc, -28.53px -9.27px 0 #ccc, 17.63px 24.27px 0 #ccc, -17.63px 24.27px 0 #ccc;
+  }
+}
+
+@keyframes app-loading-rotete {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.1) rotate(180deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}

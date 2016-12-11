@@ -1,0 +1,35 @@
+#app-btnMenu {
+  $lineMargin: 20px;
+  $lineWidth: 28px;
+  $lineHeight: 4px;
+  $btnSize: $lineWidth + $lineMargin * 2;
+
+  display: block;
+  position: fixed;
+  margin: 0; padding: 0;
+  border: none;
+  width: $btnSize; height: $btnSize;
+  top: 0px; left: 0px;
+  z-index: 5;
+  transition: background .2s ease-in-out, width 0s .2s ease-in-out, height 0s .2s ease-in-out;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before {
+    position: absolute;
+    top: $btnSize / 2 - $lineHeight / 2; left: $lineMargin;
+    width: $lineWidth; height: $lineHeight;
+    background: $btnMenuColor;
+    content: "";
+    box-shadow: 0 -8px 0 $btnMenuColor, 0 8px 0 $btnMenuColor;
+  }
+
+  &:checked {
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, .2);
+    transition: background .2s ease-in-out;
+  }
+}
