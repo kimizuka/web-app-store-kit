@@ -1,0 +1,25 @@
+body[data-app="false"] {
+  height: 100%;
+  font-family: $store-font-family;
+}
+
+#store {
+  padding-bottom: 200px;
+}
+
+%defaultSection {
+  position: relative;
+  padding: 15px;
+  border-bottom: solid 1px #cdcdcd;
+  color: #999;
+  overflow: hidden;
+
+  .ttl {
+    color: #000;
+    font-size: 1.5rem;
+  }
+
+  .txt {
+    margin-top: 14px;
+  }
+}

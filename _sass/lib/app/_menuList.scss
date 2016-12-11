@@ -1,0 +1,51 @@
+#app-menuList {
+  $width: 200px;
+
+  position: fixed;
+  top: 0; bottom: 0;
+  left: -$width - 10;
+  width: $width;
+  background: $bgColor;
+  z-index: 10;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+  transition: left ease-in-out .2s;
+
+  #app-btnMenu:checked + & {
+    left: 0;
+  }
+
+  .btn {
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 100%; height: 44px;
+    font-size: 1.4rem;
+    line-height: 44px;
+  }
+
+  &:before {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: solid 1px #{$menuBorderColor};
+    width: 100%; height: 60px;
+    color: #{$menuHeaderTxtColor};
+    font-size: 2rem;
+    content: "#{$menu-header}";
+    line-height: 60px;
+  }
+
+  &:after {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    bottom: 0; left: 0;
+    padding-left: 20px;
+    border-top: solid 1px #{$menuBorderColor};
+    width: 100%; height: 40px;
+    color: #{$menuHeaderTxtColor};
+    font-size: 1rem;
+    content: "#{$copyright}";
+    line-height: 40px;
+  }
+}

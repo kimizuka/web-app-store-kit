@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+[data-app="true"] {
+  #store {
+    display: none;
+  }
+
+  #app {
+    display: block;
+  }
+}
+
+[data-app="false"] {
+  #store {
+    display: block;
+  }
+
+  #app {
+    display: none;
+  }
+}
