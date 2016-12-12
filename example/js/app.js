@@ -246,7 +246,8 @@
    */
   var ball   = new Ball(),
       kicker = new Kicker(),
-      score  = new Score();
+      score  = new Score(),
+      app    = doc.getElementById("app");
 
   ball.addEventListener("FAIL", function() {
     kicker.fail();
@@ -258,7 +259,7 @@
     score.add();
   });
 
-  doc.body.addEventListener("touchend", function(evt) {
+  app.addEventListener("click", function(evt) {
     if (!isMenu(evt.target)) {
       kicker.kick(ball.getPosition());
     }

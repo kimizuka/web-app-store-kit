@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2016-12-12:v0.0.2
+# 2016-12-12:v0.0.4
 
 CACHE:
 index.html
@@ -14,11 +14,4 @@ js/lib/stopPageScroll.js
 js/app.js
 
 NETWORK:
-img/screenshot/0.png
-img/screenshot/1.png
-img/screenshot/2.png
-img/screenshot/3.png
-img/screenshot/4.png
-img/web/favicon.ico
-img/web/ogp.png
-js/store.js
+*

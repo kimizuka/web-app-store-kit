@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2016-12-12:v0.0.3
+# 2016-12-12:v0.0.4
 
 CACHE:
 index.html
@@ -7,18 +7,11 @@ css/main.css
 img/app/icon.png
 img/app/splash-landscape.png
 img/app/splash.png
-img/resource/ball.png
-img/resource/banner.png
-img/resource/kicker.png
+# img/resource/
 js/lib/menuList.js
 js/lib/rooter.js
 js/lib/stopPageScroll.js
 js/app.js
 
 NETWORK:
-img/screenshot/0.png
-img/screenshot/1.png
-img/screenshot/2.png
-img/web/favicon.ico
-img/web/ogp.png
-js/store.js
+*

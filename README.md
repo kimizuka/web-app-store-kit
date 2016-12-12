@@ -7,17 +7,17 @@ Safariでアクセスした際は、ホーム画面に追加を促すストア�
 ホーム画面からアクセスした際はアプリを表示します。
 また、ホーム画面に追加後、1度でも起動すれば2度目以降はオフラインでも動作します。
 
-※1 iOS以外からのアクセスではストアを表示せずにアプリを表示します。
+※1 Androdからのアクセスではストアを表示せずにアプリを、それ以外からのアクセスはQRコードを表示します。
 
 
 ## サンプル
-https://kimizuka.github.io/web-app-store/example/
-https://kimizuka.github.io/web-app-store/
+- https://kimizuka.github.io/web-app-store/example/
+- https://kimizuka.github.io/web-app-store/
 
 
 ## DEMO MOVIE
 [![DEMO_MOVIE](https://img.youtube.com/vi/hunRy-v2Cg0/0.jpg)](https://youtu.be/hunRy-v2Cg0)
-- クリックで再生します。
+クリックで再生します。
 - Safariで開くとストア風のページが開き、ホーム画面に登録してから開くとアプリ風のページが開きます。
 
 
