@@ -17,6 +17,8 @@ https://kimizuka.github.io/web-app-store/
 
 ## DEMO MOVIE
 [![DEMO_MOVIE](https://img.youtube.com/vi/hunRy-v2Cg0/0.jpg)](https://youtu.be/hunRy-v2Cg0)
+- クリックで再生します。
+- Safariで開くとストア風のページが開き、ホーム画面に登録してから開くとアプリ風のページが開きます。
 
 
 ## 開発に必要なもの
