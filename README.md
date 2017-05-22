@@ -1,4 +1,4 @@
-web-app-store
+web-app-store-kit
 ====
 
 ## 説明
@@ -11,8 +11,8 @@ Safariでアクセスした際は、ホーム画面に追加を促すストア�
 
 
 ## サンプル
-- https://kimizuka.github.io/web-app-store/example/
-- https://kimizuka.github.io/web-app-store/
+- https://kimizuka.github.io/web-app-store-kit/example/
+- https://kimizuka.github.io/web-app-store-kit/
 
 
 ## DEMO MOVIE
