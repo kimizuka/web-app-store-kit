@@ -18,7 +18,6 @@ export function StoreFooter({
 }: {
   copyright: string;
 }) {
-  console.log(copyright);
   return (
     <Wrapper className="store-footer">
       <p>{ copyright }</p>

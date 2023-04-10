@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "web app store kit",
+  "short_name": "app",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000",
+  "description": "",
+  "icons": [{
+    "src": "https://via.placeholder.com/512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

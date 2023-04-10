@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.article`
+const Wrapper = styled.section`
   .box {
     display: flex;
     position: relative;

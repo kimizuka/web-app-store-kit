@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.article`
+const Wrapper = styled.section`
   position: relative;
   margin: auto;
   padding: 20px 0;
@@ -16,21 +16,14 @@ const Wrapper = styled.article`
 
   .txt {
     margin-top: 14px;
-    white-space: pre-wrap;
   }
 `;
 
-export function StoreDescription({
-  description
-}: {
-  description: string;
-}) {
+export function StoreDownload() {
   return (
-    <Wrapper className="store-description">
-      <div className="box">
-        <h2 className="ttl">説明</h2>
-        <p className="txt">{ description }</p>
-      </div>
+    <Wrapper className="store-download">
+      <h2 className="ttl">ダウンロード方法</h2>
+      <p className="txt">ホーム画面に追加ボタンからダウンロードすることができます。</p>
     </Wrapper>
   );
 }

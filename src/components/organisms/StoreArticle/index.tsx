@@ -10,7 +10,7 @@ import { StoreFooter } from './StoreFooter';
 import { StoreBalloon } from './StoreBalloon';
 import { StoreQr } from './StoreQr';
 
-const Wrapper = styled.section`
+const Wrapper = styled.article`
   color: #1d1d1d;
   font-family: 'SF Pro JP', 'SF Pro Display', 'SF Pro Icons', 'Apple WebExp Icons Custom', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -20,7 +20,7 @@ const Wrapper = styled.section`
   }
 `;
 
-export function StoreSection({
+export function StoreArticle({
   icon = '',
   title = 'アプリタイトル',
   author = '作者名',
@@ -42,7 +42,7 @@ export function StoreSection({
   });
 
   return (
-    <Wrapper id="store-section">
+    <Wrapper id="store">
       <div className="store-stage">
         <StoreHeader />
         <div className="content">

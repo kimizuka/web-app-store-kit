@@ -44,7 +44,7 @@ const Wrapper = styled.div`
     line-height: 1.4em;
 
     @media (prefers-color-scheme: dark) {
-      color: #fefefe;
+      color: #cdcdcd;
     }
   }
 

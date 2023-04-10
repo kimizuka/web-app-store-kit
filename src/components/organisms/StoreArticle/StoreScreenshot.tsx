@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.article`
+const Wrapper = styled.section`
   position: relative;
   margin: auto;
   padding: 20px 0 32px;
