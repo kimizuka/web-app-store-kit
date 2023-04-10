@@ -1,68 +1,38 @@
-web-app-store-kit
-====
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## 説明
-iOS用のウェブアプリストアの雛形です。
-Safariでアクセスした際は、ホーム画面に追加を促すストアページを表示（※1）し、
-ホーム画面からアクセスした際はアプリを表示します。
-また、ホーム画面に追加後、1度でも起動すれば2度目以降はオフラインでも動作します。
+## Getting Started
 
-※1 Androdからのアクセスではストアを表示せずにアプリを、それ以外からのアクセスはQRコードを表示します。
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-## サンプル
-- https://kimizuka.github.io/web-app-store-kit/example/
-- https://kimizuka.github.io/web-app-store-kit/
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## DEMO MOVIE
-[![DEMO_MOVIE](https://img.youtube.com/vi/hunRy-v2Cg0/0.jpg)](https://youtu.be/hunRy-v2Cg0)
-- クリックで再生します。
-- Safariで開くとストア風のページが開き、ホーム画面に登録してから開くとアプリ風のページが開きます。
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## 開発に必要なもの
-- Sass ※ CSSを自前で書く気概があれば必要ありません。
-- Compass ※ CSSを自前で書く気概があれば必要ありません。
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Learn More
 
-## ファイル構成
+To learn more about Next.js, take a look at the following resources:
 
-- `README.md`
-  - 開発のいろはが記述してあります（このファイルです）。
-- `app.appcache`
-  - キャッシュするファイルを記述します。
-- `config.rb`
-  - compassの設定を記述します。
-- `index.html`
-  - #store内にストア、#app内にアプリで表示したいものをマークアップします。
-- `_sass/`
-  - scssファイルが収納されています。基本的には_setting.scssと_stage.scssを編集すればOKです。
-- `css/main.css`
-  - コンパイルされたcssです。直接編集することはありません。
-- `example/`
-  - 例としてリフティングアプリがはいってます。
-- `img/`
-  - `app/`
-    - `icon.png`
-      - ホーム画面に表示されるアイコンです。
-    - `splash-landscape.png`
-      - 横向きの起動画面です
-    - `splash.png`
-      - 起動画面です
-  - `resource/`
-    - アプリで使用する画像置き場を想定しています。
-  - `screenshot/`
-    - ストアに表示するスクリーンショット置き場です。
-  - `web/`
-    - favicon.ico
-      - ファビコンです
-    - ogp.png
-      - OG画像です。
-- `js/`
-  - JavaScript置き場です。基本的にはapp.jsとstore.jsを編集すればOKです。
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## スペシャルサンクス
-サンプルアプリの画像をして北斗市公式キャラクター ずーしーほっきー ©2013 北海道北斗市 を使用させていただいております。
-http://www.city.hokuto.hokkaido.jp/modules/shinkansen/content0039.html
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

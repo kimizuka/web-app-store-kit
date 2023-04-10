@@ -1,0 +1,30 @@
+#store-qr {
+  display: none;
+
+  &:target {
+    display: block;
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 10;
+    pointer-events: none;
+
+    #store-qr-img {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0; right: 0;
+      margin: auto;
+      width: 250px; height: 300px;
+      background: #fff;
+    }
+
+    #store-qr-txt {
+      position: absolute;
+      bottom: 35px;
+      left: 0; right: 0;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}
