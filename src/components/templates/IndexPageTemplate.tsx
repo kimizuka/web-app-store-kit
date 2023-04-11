@@ -40,8 +40,8 @@ export function IndexPageTemplate() {
         {!isStandalone ? (
           <StoreArticle
             title="アプリタイトル"
-            author="作者名"
             icon="https://via.placeholder.com/140x140"
+            author="作者名"
             screenshots={[
               'https://via.placeholder.com/360x650',
               'https://via.placeholder.com/360x650',
@@ -50,6 +50,8 @@ export function IndexPageTemplate() {
               'https://via.placeholder.com/360x650'
             ]}
             description="ディスクリプション"
+            copyright="copyright"
+            ogImage="https://via.placeholder.com/1200x630"
           />
         ) : (
           <AppArticle />

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Head from 'next/head';
 import { useResize } from '@/hooks/useResize';
 import { useIsIos } from '@/hooks/useIsIos';
 import { StoreHeader } from './StoreHeader';
@@ -26,7 +27,9 @@ export function StoreArticle({
   author = '作者名',
   screenshots = [],
   description = 'ディスクリプション',
-  copyright = 'copyright'
+  copyright = 'copyright',
+  url = '',
+  ogImage = ''
 }: {
   icon?: string;
   title?: string;
@@ -34,6 +37,8 @@ export function StoreArticle({
   screenshots?: string[];
   description?: string;
   copyright?: string;
+  url?: string;
+  ogImage?: string;
 }) {
   const { windowWidth, windowHeight } = useResize();
   const { isIos } = useIsIos({
@@ -43,6 +48,18 @@ export function StoreArticle({
 
   return (
     <Wrapper id="store">
+      <Head>
+        <meta property="og:type" content="website" />
+        { url && <meta property="og:url" content={ url } /> }
+        { title && <meta property="og:title" content={ title } /> }
+        { title && <meta property="og:site_name" content={ title } /> }
+        { description && <meta property="og:description" content={ description } /> }
+        { (ogImage || screenshots[0]) && <meta property="og:image" content={ ogImage || screenshots[0] } /> }
+        <meta name="twitter:card" content="summary_large_image" />
+        { title && <meta name="twitter:title" content={ title } /> }
+        { description && <meta name="twitter:description" content={ description } /> }
+        { (ogImage || screenshots[0]) && <meta name="twitter:image:src" content={ ogImage || screenshots[0] } /> }
+      </Head>
       <div className="store-stage">
         <StoreHeader />
         <div className="content">
