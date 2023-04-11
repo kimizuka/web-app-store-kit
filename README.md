@@ -3,6 +3,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## DEMO URL
 [https://web-app-store-kit.vercel.app/](https://web-app-store-kit.vercel.app/)
 
+## DEMO MOVIE
+
+![app](https://user-images.githubusercontent.com/1844743/231041193-5c5b7adb-5711-4dbf-acae-56bad2e3a8d6.gif)
+
 ## Getting Started
 
 First, run the development server:
