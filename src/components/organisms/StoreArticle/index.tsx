@@ -22,8 +22,8 @@ const Wrapper = styled.article`
 `;
 
 export function StoreArticle({
-  icon = '',
   title = 'アプリタイトル',
+  icon = '',
   author = '作者名',
   screenshots = [],
   description = 'ディスクリプション',
@@ -31,8 +31,8 @@ export function StoreArticle({
   url = '',
   ogImage = ''
 }: {
-  icon?: string;
   title?: string;
+  icon?: string;
   author?: string;
   screenshots?: string[];
   description?: string;
@@ -49,6 +49,7 @@ export function StoreArticle({
   return (
     <Wrapper id="store">
       <Head>
+        <title>{ title }</title>
         <meta property="og:type" content="website" />
         { url && <meta property="og:url" content={ url } /> }
         { title && <meta property="og:title" content={ title } /> }
