@@ -15,13 +15,17 @@ const Wrapper = styled.section`
     flex-shrink: 0;
     border: solid 1px #cdcdcd;
     border-radius: calc(100vw / 375 * 96 * 13 / 60);
-    max-width: 216px;
-    max-height: 216px;
+    max-width: calc(980px / 375 * 96);
+    max-height: calc(980px / 375 * 96);
     width: calc(100vw / 375 * 96);
     height: calc(100vw / 375 * 96);
     overflow: hidden;
     box-shadow: 0 0 4px rgba(0, 0, 0, .2);
 
+    @media (min-width: 980px) {
+      border-radius: calc(980px / 375 * 96 * 13 / 60);
+    }
+    
     > img {
       width: 100%; height: 100%;
       object-fit: cover;
