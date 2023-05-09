@@ -3,20 +3,19 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   position: relative;
   margin: auto;
-  padding: 20px 0;
-  border-bottom: solid 1px #cdcdcd;
-  width: 87.5%;
-  font-size: 13px;
+  padding: 24px 0;
+  width: 88%;
+  font-size: 12px;
   overflow: hidden;
 
   .ttl {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
   }
 
   .txt {
-    margin-top: 14px;
-    white-space: pre-wrap;
+    margin-top: 16px;
+    color: rgb(96, 96, 96);
   }
 `;
 

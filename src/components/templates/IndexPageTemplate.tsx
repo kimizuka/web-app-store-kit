@@ -40,14 +40,14 @@ export function IndexPageTemplate() {
         {!isStandalone ? (
           <StoreArticle
             title="アプリタイトル"
-            icon="https://via.placeholder.com/140x140"
+            icon="https://via.placeholder.com/160x160"
             author="作者名"
             screenshots={[
-              'https://via.placeholder.com/360x650',
-              'https://via.placeholder.com/360x650',
-              'https://via.placeholder.com/360x650',
-              'https://via.placeholder.com/360x650',
-              'https://via.placeholder.com/360x650'
+              'https://via.placeholder.com/375x812',
+              'https://via.placeholder.com/375x812',
+              'https://via.placeholder.com/375x812',
+              'https://via.placeholder.com/375x812',
+              'https://via.placeholder.com/375x812'
             ]}
             description="ディスクリプション"
             copyright="copyright"

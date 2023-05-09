@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { TbShare2 } from 'react-icons/tb';
 
 const Wrapper = styled.section`
   position: relative;
@@ -41,14 +40,13 @@ const Wrapper = styled.section`
   }
 `;
 
-export function StoreDownload() {
+export function StoreUninstall() {
   return (
-    <Wrapper className="store-download">
-      <h2 className="ttl">ダウンロード方法</h2>
+    <Wrapper className="store-uninstall">
+      <h2 className="ttl">削除方法</h2>
       <ol>
-        <li data-icon="1️⃣">Safariの <TbShare2 /> を押してメニューを表示します</li>
-        <li data-icon="2️⃣"><strong>ホーム画面に追加</strong>でホーム画面に追加します</li>
-        <li data-icon="3️⃣">ホーム画面から起動するとアプリのように振舞います</li>
+        <li data-icon="1️⃣">ホーム画面に追加したアイコンを長押しします</li>
+        <li data-icon="2️⃣"><strong>ブックマークを削除</strong>で削除します</li>
       </ol>
     </Wrapper>
   );

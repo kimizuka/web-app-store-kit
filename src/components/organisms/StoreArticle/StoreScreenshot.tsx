@@ -4,29 +4,35 @@ const Wrapper = styled.section`
   position: relative;
   margin: auto;
   padding: 20px 0 32px;
-  border-bottom: solid 1px #cdcdcd;
-  width: 87.5%;
   overflow: hidden;
 
   .ttl {
-    font-size: 20px;
+    margin: auto;
+    width: 88%;
+    font-size: 18px;
     font-weight: bold;
   }
 
   .scrollmask {
     margin-top: 16px;
     max-height: 497px;
-    height: calc(100vw / 375 * 342);
+    height: calc(100vw / 375 * 812 * .4);
     overflow: hidden;
   }
 
   .scrollarea {
-    padding-bottom: 100px;
     overflow-x: scroll;
     overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .screenshots {
+    display: inline-block;
+    padding: 0 6%;
     white-space: nowrap;
   }
 
@@ -35,8 +41,8 @@ const Wrapper = styled.section`
     border-radius: 10% / 4.7%;
     max-width: 230px;
     max-height: 497px;
-    width: calc(100vw / 375 * 156);
-    height: calc(100vw / 375 * 342);
+    width: calc(100vw / 375 * 375 * .4);
+    height: calc(100vw / 375 * 812 * .4);
     object-fit: cover;
 
     + .screenshot {

@@ -6,19 +6,21 @@ const Wrapper = styled.section`
     position: relative;
     margin: auto;
     padding: 32px 0;
-    border-bottom: solid 1px #cdcdcd;
-    width: 87.5%;
+    width: 88%;
     overflow: hidden;
   }
 
   .icon {
+    box-sizing: content-box;
+    flex-shrink: 0;
     border: solid 1px #cdcdcd;
-    border-radius: 21px;
+    border-radius: calc(100vw / 375 * 96 * 13 / 60);
     max-width: 216px;
     max-height: 216px;
-    width: calc(100vw / 375 * 130);
-    height: calc(100vw / 375 * 130);
+    width: calc(100vw / 375 * 96);
+    height: calc(100vw / 375 * 96);
     overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
 
     > img {
       width: 100%; height: 100%;
@@ -29,16 +31,18 @@ const Wrapper = styled.section`
   .info {
     display: flex;
     align-items: flex-start;
-    margin-left: 3.28%;
+    margin-left: 8%;
 
     .ttl {
-      font-size: 18px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1;
       word-wrap: break-word;
     }
 
     .author {
       margin-top: 8px;
-      font-size: 13px;
+      font-size: 16px;
     }
   }
 `;
@@ -56,11 +60,7 @@ export function StoreInformation({
     <Wrapper className="store-information">
       <div className="box">
         <p className="icon">
-          { icon && <img
-            src={ icon }
-            width="100"
-            height="100"
-          /> }
+          { icon && <img src={ icon } /> }
         </p>
         <div className="info">
           <div className="inner">

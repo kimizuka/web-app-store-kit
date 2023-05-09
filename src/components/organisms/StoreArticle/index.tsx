@@ -4,15 +4,17 @@ import { useResize } from '@/hooks/useResize';
 import { useIsIos } from '@/hooks/useIsIos';
 import { StoreHeader } from './StoreHeader';
 import { StoreInformation } from './StoreInformation';
+import { StoreNote } from './StoreNote';
 import { StoreScreenshot } from './StoreScreenshot';
 import { StoreDescription } from './StoreDescription';
 import { StoreDownload } from './StoreDownload';
+import { StoreUninstall } from './StoreUnInstall';
 import { StoreFooter } from './StoreFooter';
 import { StoreBalloon } from './StoreBalloon';
 import { StoreQr } from './StoreQr';
 
 const Wrapper = styled.article`
-  color: #1d1d1d;
+  color: rgb(32, 32, 32);
   font-family: 'SF Pro JP', 'SF Pro Display', 'SF Pro Icons', 'Apple WebExp Icons Custom', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   .content {
@@ -62,13 +64,14 @@ export function StoreArticle({
         { (ogImage || screenshots[0]) && <meta name="twitter:image:src" content={ ogImage || screenshots[0] } /> }
       </Head>
       <div className="store-stage">
-        <StoreHeader />
+        <StoreHeader title={ title } />
         <div className="content">
           <StoreInformation
             icon={ icon }
             title={ title }
             author={ author }
           />
+          <StoreNote />
           <StoreScreenshot
             screenshots={ screenshots }
           />
@@ -76,6 +79,7 @@ export function StoreArticle({
             description={ description }
           />
           <StoreDownload />
+          <StoreUninstall />
           <StoreFooter
             copyright={ copyright }
           />

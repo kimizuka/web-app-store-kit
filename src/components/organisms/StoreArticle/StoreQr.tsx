@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     margin: auto;
     border-radius: 32px;
     width: 256px; height: 296px;
-    background: #fff;
+    background: white;
     overflow: hidden;
     box-shadow: 0 0 4px rgba(0, 0, 0, .2);
   }
@@ -31,7 +31,6 @@ const Wrapper = styled.div`
     border-radius: 8px;
     font-size: 10px;
     text-align: center;
-    background: #f2f8fc;
   }
 `;
 
@@ -52,7 +51,7 @@ export function StoreQr() {
     <Wrapper className="store-qr">
       <div className="store-qr-box">
         <img ref={ imageRef } />
-        <p className="store-qr-txt">このPWAはiOSでのみご利用いただけます。</p>
+        <p className="store-qr-txt">このサイトはiOSでのみご利用いただけます。</p>
       </div>
     </Wrapper>
   );

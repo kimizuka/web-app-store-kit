@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Wrapper = styled.footer`
   margin: auto;
-  padding: 20px 0;
-  width: 87.5%;
+  padding: 24px 0;
+  width: 88%;
   font-size: 11px;
 
   > p {
