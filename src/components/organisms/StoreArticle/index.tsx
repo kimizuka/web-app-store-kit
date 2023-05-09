@@ -8,7 +8,7 @@ import { StoreNote } from './StoreNote';
 import { StoreScreenshot } from './StoreScreenshot';
 import { StoreDescription } from './StoreDescription';
 import { StoreDownload } from './StoreDownload';
-import { StoreUninstall } from './StoreUnInstall';
+import { StoreUninstall } from './StoreUninstall';
 import { StoreFooter } from './StoreFooter';
 import { StoreBalloon } from './StoreBalloon';
 import { StoreQr } from './StoreQr';
